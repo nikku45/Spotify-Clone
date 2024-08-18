@@ -1,0 +1,370 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+} 
+.sidebar{
+    background-color:#000;
+    width: 300px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.maincontent{
+    background-color:  #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 01.5rem;
+
+}
+.musicplayer{
+    background-color: black;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    /* margin-top: 0.10re; */
+    height: 100px;
+    /* justify-content: space-evenly; */
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    background-color: #121212;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+   
+}
+.nav-option:hover{
+    
+    opacity: 1;
+   
+}
+.nav-option i{
+    background-color: #121212;
+    font-size: 1.25rem;
+}
+.nav-option a{
+    background-color: #121212;
+    font-size:1rem ;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+  }
+  .library-option img {
+       height: 1.25rem;
+       width: 1.25rem;
+       
+    }
+.icons{
+    font-size: 1.25 rem;
+    display: flexbox;
+    background-color: #121212;
+
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+    
+}
+.icons i:hover{
+    opacity: 1;
+}
+.lib-boxes{
+   background-color: #121212;
+
+}
+.box{
+    background-color: #232323;
+    /* height: 9rem; */
+    border-radius: 1rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.box-p1{
+    font-size:1rem ;
+    background-color: #232323;
+    font-weight: 800px;
+
+}
+.box-p2{
+    font-size: 0.85;
+    opacity: 0.9;
+    background-color: #232323;
+    margin-top: 0.7rem;
+}
+.badge{
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight:700px;
+    margin-top:0.7rem;
+    height: 2rem;
+    width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0 1rem;
+    z-index: 10;
+}
+.sticky-nav-icons {
+   margin-left: 0.75rem;  
+    background-color: #121212;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+.nav-button{
+     margin-right: 1rem;
+     
+}
+.dark-badge{
+    background-color: #000;
+    color: white;
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem; 
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+
+}
+.card-container{
+    display: flex;
+  flex-wrap: wrap;
+  
+}
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-tittle{
+    font-weight: 600;
+}
+.card-info{
+    font-size:0.85rem;
+    opacity: 0.8;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 95%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.musicplayer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    width: 25%;
+ 
+    height: 100%;
+}
+.player{
+    width:50% ;
+    
+}
+.control{
+    width: 25%;
+    height: 100%;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.15rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+
+}
+ .album{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+.artist{
+    font-size: 20px;
+    
+    line-height: 5px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.album-img{
+    display: flex;
+}
+.album-img img{ 
+    height: 4rem;
+    margin-top: 5px;
+    padding:5px;
+    border-radius: 10px ;
+}
+
+.album-icons{
+    display: flex;
+    height: 2rem;
+    margin-right: 3rem;
+    opacity: 0.5;
+   
+}
+.album-icons:hover{
+    opacity: 1;
+    
+}
+.control{
+    display: flex;
+}
+.contro-icon{
+    height: 3rem;
+}
+.progress-bar2{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar2::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.15rem;
+}
+.progress-bar2::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+
+}
+.card-grid{
+    display: grid;
+    grid-gap: 8px;
+    width: 100%;
+   grid-template-rows:repeat(3,1fr) ;
+   grid-template-columns: repeat(3,1fr);
+   margin-left: 20px;
+}
+.container{
+    display: flex;
+    height: 48px;
+   border-radius: 5px;
+   background-color:#70748168;
+}
+.container p{
+    margin-left: 15px;
+}
+  .container img{
+    height: 100%;
+    width: 48px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    object-fit:cover;
+}  
+.card-container .card .play{
+    position: relative;
+}
+ .card-container .card .play .fa{
+    position: absolute;
+    right: 10px;
+    top: -60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+   
+    transition: all ease 0.4s;
+}
+.card-container .card:hover .play .fa {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.fa-play:before{
+    content: "\f04b";
+}
+
+
